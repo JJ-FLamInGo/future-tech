@@ -8,7 +8,7 @@
 	<script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
-	<header class="header">
+	<header class="header" data-js-header>
 		<div class="header__promo">
 			<div class="header__promo-inner container">
 				<a href="#" class="header__promo-link">
@@ -26,7 +26,7 @@
 					width="179" height="50"
 				/>
 				</a>
-				<div class="header__overlay">
+				<div class="header__overlay" data-js-header-overlay>
 				<nav class="header__menu">
 					<ul class="header__menu-list">
 						<li class="header__menu-item">
@@ -43,7 +43,7 @@
 						</li>
 					</ul>
 				</nav>
-				<a href="" class="header__contact-us-link button button--accent">
+				<a href="/" class="header__contact-us-link button button--accent">
 					Contact Us</a>
 				</div>
 					<button
@@ -51,6 +51,7 @@
 					type="button"
 					aria-label="Open menu"
 					title="Open menu"
+					data-js-header-burger-button
 					>
 						<span class="burger-button__line"></span>
 						<span class="burger-button__line"></span>
@@ -59,5 +60,13 @@
 			</div>
 		</div>
 	</header>
+
+	<main>
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia corrupti officiis quaerat perferendis assumenda voluptatum error culpa? Temporibus assumenda laboriosam necessitatibus sed odit veniam nulla placeat vero eaque. Odio mollitia pariatur earum rerum velit quas a nam autem quo quos voluptatum exercitationem, modi harum quasi sapiente numquam consequatur consequuntur dolorum!
+	</main>
+
+	<footer class="footer">
+		<h1>Footer</h1>
+	</footer>
 </body>
 </html>
