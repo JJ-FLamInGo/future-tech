@@ -62,3 +62,19 @@
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
+
+/**В параметрах миксин будет ожидать property, т.е название свойства, по умолчанию указали значение top
+*/
+@mixin full-vw-centered-line($property: top){
+	position: relative;
+
+	&:before {
+		@include abs-x;
+
+		content: '';
+		#{$property}: 0;
+		width: 100vw;
+		height: rem(1);
+		background-color: var(--color-dark-15);
+	}
+}
