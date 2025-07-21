@@ -12,6 +12,11 @@
     @include laptop {
       border-radius: rem(10);
     }
+
+		&--small {
+			height: fluid(290, 208);
+			height: 100%;
+		}
   }
 
   &__panel {
